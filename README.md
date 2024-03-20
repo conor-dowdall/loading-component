@@ -35,8 +35,12 @@ loading-component {
 #### Customize with CSS Custom Properties
 
 ```css
+/* customize the 3D effect */
+--perspective: <length> /* default = 400px */
+
 /* customize the 'loading' text */
 --loading-text-font-size: <length>; /* default = 1.75em */
+--loading-text-font-color: <color>; /* default = yellowgreen */
 --loading-text-pulse-duration: <time>; /* default = 1s */
 
 /* customize the atoms */

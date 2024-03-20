@@ -128,7 +128,10 @@ OUTER_3D_BOX_TEMPLATE.innerHTML = /* HTML */ `
     }
 
     .outer-3d-box {
+      --_perspective: var(--perspective, 400px);
+
       --_loading-text-font-size: var(--loading-text-font-size, 1.75em);
+      --_loading-text-font-color: var(--loading-text-font-color, yellowgreen);
       --_loading-text-pulse-duration: var(--loading-text-pulse-duration, 1s);
 
       --_atom-orbit-duration: var(--atom-orbit-duration, 1.9s);
@@ -138,7 +141,7 @@ OUTER_3D_BOX_TEMPLATE.innerHTML = /* HTML */ `
       --_atom-tail-color-2: var(--atom-tail-color-2, lightgreen);
 
       position: relative;
-      perspective: 400px;
+      perspective: var(--_perspective);
       width: 100%;
       height: 100%;
 
@@ -218,7 +221,7 @@ OUTER_3D_BOX_TEMPLATE.innerHTML = /* HTML */ `
 
     .loading-text {
       position: absolute;
-      color: yellowgreen;
+      color: var(--_loading-text-font-color);
       font-size: var(--_loading-text-font-size);
       left: 50%;
       top: 50%;
