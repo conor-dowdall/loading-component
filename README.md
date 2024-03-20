@@ -36,7 +36,7 @@ loading-component {
 
 ```css
 /* customize the 3D effect */
---perspective: <length> /* default = 400px */
+--perspective: <length>; /* default = 400px */
 
 /* customize the 'loading' text */
 --loading-text-font-size: <length>; /* default = 1.75em */
